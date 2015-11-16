@@ -1,7 +1,7 @@
 /*
  * 2015-11-17 Cho Kwanghee ( https://github.com/chokh1443 )
  * Term Project of Creative ICT Compution class at CAU, South Korea
- * Class to controll 4*4*4 LED cube using Arduino Uno 
+ * Program to controll 4*4*4 LED cube using Arduino Uno 
  */
  
 class  Cube {//class to controll LED CUBE
