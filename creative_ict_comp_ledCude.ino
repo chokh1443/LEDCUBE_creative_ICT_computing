@@ -58,7 +58,7 @@ void Cube::timer0Init(){
   //CTC mode, clkio 1024
   //datasheet pg106
   TCCR0A = 0x02;// (1<<WGM01)
-  TCCR0B = 0x05;// (1<<CS01) | (1<<CS00)
+  TCCR0B = 0x05;// (1<<CS02) | (1<<CS00)
   TCNT0 = 0x00;
   OCR0A = 0x40;//64
   TIMSK0 = 0x02;// (1<<OCIE0A);
