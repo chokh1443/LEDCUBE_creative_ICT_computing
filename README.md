@@ -1,1 +1,3 @@
-# LEDCUDE_creative_ICT_computing
+# LED CUBE
+학교에서 텀 프로젝트로 진행한 아두이노를 사용해 4*4*4 LED CUBE를 동작시키기 위한 프로그램입니다.
+
