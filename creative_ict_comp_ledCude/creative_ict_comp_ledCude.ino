@@ -190,10 +190,10 @@ void loop() {
     offAll();
   }
   if(timeElapse <32){//LED가 아래서부터 하나씩 켜짐
-    onById(timeElapse%32*2 + ((ms4counter<120)?0:1));
+    onById(timeElapse%32*2 + ((ms4counter<240)?0:1));
   }
   else if(timeElapse < 32*2){//LED가 위에서부터 하나씩 켜짐
-    onById(63 - timeElapse%32*2 - ((ms4counter<120)?0:1));
+    onById(63 - timeElapse%32*2 - ((ms4counter<240)?0:1));
   }
   else if(timeElapse < 32*2+8){//레이어 한층씩 켜짐 위로 shift
     onByLayer(((timeElapse%32)+0)%4);
@@ -262,7 +262,7 @@ ISR(TIMER2_COMPA_vect) {
    *  한 층씩 출력해준다.
    */
   static int counter = 0;
-  int timerSpeed = 240;//240으로 하면 약 1초마다 cube->timerElapse가 1씩 올라감
+  int timerSpeed = 240;//240;//240으로 하면 약 1초마다 cube->timerElapse가 1씩 올라감
   if((ms4counter = ++ms4counter % timerSpeed) == 0) {
     timeElapse++;
   }
