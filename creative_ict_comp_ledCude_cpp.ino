@@ -317,7 +317,7 @@ ISR(TIMER2_COMPA_vect) {
    *  한 층씩 출력해준다.
    */
   static int counter = 0;
-  int timerSpeed = 240;//240;//240으로 하면 약 1초마다 cube->timerElapse가 1씩 올라감
+  int timerSpeed = 240;//240으로 하면 약 1초마다 cube->timerElapse가 1씩 올라감
   if((cube4.ms4counter = ++cube4.ms4counter % timerSpeed) == 0) {
     cube4.timeElapse++;
   }
